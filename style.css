@@ -1,0 +1,427 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.sidebar {
+  background-color: black;
+  width: 25rem;
+}
+.main-content {
+  background-color: #121212;
+  flex: 1;
+  border-radius: 1rem;
+  overflow: auto;
+  margin: 8px 8px 0 0;
+  height: 91.15vh;
+}
+
+
+
+.nav-top {
+  background-color: #121212;
+  height: 6.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin: .5rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-top i {
+  font-size: 22px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.nav-top a {
+  margin-left: 1rem;
+}
+.home {
+  line-height: 2.5rem;
+}
+.search {
+  opacity: 0.6;
+  line-height: 2.5rem;
+}
+.search:hover {
+  opacity: 1;
+}
+.nav-mid {
+  background-color: #121212;
+  height: 47.5rem;
+  margin: 8px;
+  border-radius: 1rem;
+}
+
+.library {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.add {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.add:hover {
+  background-color: #242424;
+  opacity: 1;
+}
+.add i {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.lib {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.lib:hover {
+  opacity: 1;
+}
+.lib span {
+  margin-left: 16px;
+}
+
+.badge {
+  background-color: #242424;
+  height: 7rem;
+  margin: 0 0.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.badge-title {
+  font-size: large;
+  font-weight: 600;
+}
+.badge-content {
+  font-size: small;
+  font-weight: 500;
+}
+.badge-btn {
+  height: 2rem;
+  width: fit-content;
+  background-color: white;
+  font-weight: 600;
+  color: black;
+  padding: 0.25rem 1rem;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.podcast {
+  margin: 1.25rem 0.5rem;
+}
+
+
+.stikcy-nav{
+    
+   position: sticky;
+   top: 0;
+   background-color: #121212;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem ;
+}
+
+.sticky-l_side img{
+    height:1.8rem;
+    margin-left: 10px;
+    border-radius: 50%;
+    opacity: .5;
+    cursor: pointer;
+}
+.sticky-l_side img:hover{
+   background-color: #2b2929;
+    opacity: 1;
+}
+
+.sticky-r-side{
+    width: 20rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+i{
+    
+  cursor: pointer;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1032px){
+    .sticky-r-side{
+        width: 10rem;
+    }
+.hide{
+    
+    display: none;
+}
+}
+
+.card-container{
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  
+}
+
+.card{
+  background-color: rgba(43,41,41, .2);
+  border-radius: 1rem;
+  width: 11rem;
+  padding: 1rem;
+  transition: .5s;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+.record{
+  margin-left: 30px;
+}
+
+.card:hover{
+  background-color: rgba(43,41,41, .9);
+  
+ 
+}
+
+.card-img{
+  border-radius: 1rem;
+  width: 180px;
+}
+
+.card-title{
+  font-weight: 600;
+ margin-top: 1.25rem;
+}
+
+.card-content{
+  font-size: small;
+  opacity: .7;
+}
+
+.play{
+  background-color: rgb(47, 190, 47);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 50px;
+  left: 130px;
+  display: none;
+  
+ 
+}
+.play i{
+  color: black;
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  
+}
+
+.footer{
+  height: 30rem;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.top{
+  height: 53%;
+  margin: 2rem 3rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  
+
+  
+}
+.links{
+  width:40% ;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.company{
+  display: flex;
+  flex-direction: column;
+  
+}
+.community{
+  display: flex;
+  flex-direction: column;
+}
+.useful-links{
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom{
+  
+  display: flex;
+  align-items: center;
+  height: 30%;
+  border-top: 1px solid white;
+  
+  margin-left:2.5rem;
+  margin-right:2.5rem;
+    
+}
+
+.top a{
+  margin-top: .625rem;
+  font-size: small;
+  opacity: .7;
+}
+.top a:hover{
+  text-decoration: underline;
+  opacity: 1;
+}
+.com{
+  font-weight: 600;
+}
+
+.music-player {
+  background-color:#121212;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 99%;
+  margin-left: .5rem;
+  height: 4.4rem;
+  border-radius: 1rem;
+  
+  display: flex;
+  justify-content: space-around;
+}
+
+.cover{
+
+width: 20%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.song{
+  display: flex;
+  flex-direction: column;
+  
+}
+.song p{
+  margin: 0;
+  margin-bottom: 5px;
+}
+.cover-icons{
+  display: flex;
+}
+
+.player{
+  
+  width: 35%;
+
+}
+
+.player-control{
+
+width: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.player-control img{
+  cursor: pointer;
+  margin-right: 20px;
+}
+.player-control i{
+  margin-right: 20px;
+ 
+}
+
+.player{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-ctrl{
+  margin-top: 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-ctrl{
+  cursor: pointer;
+}
+.ptime{
+  margin-top: 5px;
+  display: flex;
+ align-items: center;
+  
+}
+.ptime span{
+  margin: 0 7px 0 7px;
+  
+}
+
+.range{
+ appearance: none;
+  width: 300px;
+  height: 12px;
+  border-radius: 100px;
+  overflow: hidden;
+  
+  cursor: pointer;
+}
+
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #00fd0a;
+  cursor: pointer;
+  border: 5px solid #333;
+  box-shadow: -407px 0 0 400px #00fd0a;
+}
+
+.social a{
+  margin-left: 15px;
+}

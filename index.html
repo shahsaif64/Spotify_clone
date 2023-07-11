@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo.png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/mini-player.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-button-r.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav-top">
+          <div class="home">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="nav-mid">
+          <div class="library">
+            <div class="lib">
+              <img src="./assets/library_icon.png" style="height: 20px" />
+              <span>Your library</span>
+            </div>
+
+            <div class="add">
+              <i class="fa-sharp fa-solid fa-plus"></i>
+            </div>
+          </div>
+
+          <div class="badge">
+            <div class="badge-title">Create your first playlist</div>
+            <div class="badge-content">it's easy,we'll help you</div>
+            <button class="badge-btn">Create playlist</button>
+          </div>
+
+          <div class="podcast badge">
+            <div class="badge-title">Let's find some podcasts to follow</div>
+            <div class="badge-content">
+              We'll keep you updated on new episodes
+            </div>
+            <button type="button" class="badge-btn">Browse podcasts</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="stikcy-nav">
+          <div class="sticky-l_side">
+            <img src="./assets/backward_icon.png" alt="" />
+            <img class="hide" src="./assets/forward_icon.png" alt="" />
+          </div>
+
+          <div class="sticky-r-side">
+            <button type="button" class="badge-btn hide">
+              Explore Premium
+            </button>
+            <button type="button" class="badge-btn bg-black">
+              <i class="fa-regular fa-circle-down"></i> Install App
+            </button>
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+        </div>
+           
+
+        <div>
+
+          <h2 class="record">Recently Played</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card1img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+  
+           
+  
+            
+  
+            
+  
+          </div>
+
+
+          <h2 class="record">Trending now near You</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card2img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+  
+            <div class="card">
+              <img src="./assets/card3img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+  
+            <div class="card">
+              <img src="./assets/card4img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+  
+            <div class="card">
+              <img src="./assets/card4img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+  
+            <div class="card">
+              <img src="./assets/card2img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+  
+            <div class="card">
+              <img src="./assets/card3img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+          </div>
+
+
+          <h2 class="record">Featured Charts</h2>
+          <div class="card-container">
+            <div class="card">
+              <img src="./assets/card5img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+  
+            <div class="card">
+              <img src="./assets/card6img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/card1img.jpeg" class="card-img" alt="image1" />
+              <div class="play"><i class="fa-solid fa-play"></i></div>
+              <div class="card-title">Top 50 - Global</div>
+              <p class="card-content">
+                Your daily update of the most played tracks right...
+              </p>
+            </div>
+  
+            
+
+        </div>
+        <div class="footer">
+          <div class="top">
+            <div class="links">
+              <div class="company">
+                <div class="com">Company</div>
+                <a href="#">About</a>
+                <a href="#">Jobs</a>
+                <a href="#">For the Record</a>
+              </div>
+              <div class="community">
+                <div class="com">Communities</div>
+                <a href="#">For Artists</a>
+                <a href="#">Devlopers</a>
+                <a href="#">Advertising</a>
+                <a href="#">Investors</a>
+                <a href="#">Vendors</a>
+                <a href="#">Spotify for Work</a>
+              </div>
+              <div class="useful-links">
+                <div class="com">Useful Links</div>
+                <a href="#">Support</a>
+                <a href="#">Free Mobile App</a>
+              </div>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook fa-beat-fade fa-2xl"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-beat-fade fa-2xl"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-beat-fade fa-2xl"></i></a>
+            </div>
+          </div>
+          <div class="bottom">
+            <div>2023 Spotify Ab</div>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="music-player">
+        
+        <div class="cover">
+          <img src="./assets/homework assests/album_picture.jpeg" alt="">
+          <div class="song">
+             <p>Daylight</p>
+            <a style="font-size: smaller;" href="">David Kushner</a>
+          </div>
+          <div class="cover-icons">
+            <i style="margin-right: 15px;" class="fa-regular fa-heart"></i>
+            <i class="gg-mini-player"></i>
+          </div>
+        </div>
+
+
+        <div class="player">
+          <div class="p-ctrl">
+            <img src="./assets/player_icon1.png" style="height: 16px;" alt="">
+            <img src="./assets/player_icon2.png" style="height: 16px;" alt="">
+            <img src="./assets/player_icon3.png" style="height: 32px;" alt="">
+            <img src="./assets/player_icon4.png" style="height: 16px;" alt="">
+            <img src="./assets/player_icon5.png" style="height: 16px;" alt="">
+          </div>
+          <div class="ptime">
+            <span>0 </span>
+            <input type="range"  class="range"  min="0" max="100">
+            <span  id="rangeValue"> 100</span>
+          </div>
+        </div>
+
+        <div class="player-control">
+          <i class="gg-play-button-r"></i>
+          <i class="fa-solid fa-microphone"></i>
+          <img src="./assets/homework assests/controls_icon3.png" style="height: 25px;" alt="">
+          <img src="./assets/homework assests/controls_icon4.png"  style="height: 20px;" alt="">
+          <i class="fa-solid fa-volume-high"></i>
+          <div class="range_bar">
+            
+            <input type="range">
+          </div>
+          
+          
+        </div>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
